@@ -6,18 +6,23 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = 	new Scanner(System.in);
-        int k = scanner.nextInt();
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
 
-        int a = k+4;
-        int b = a/4;
-        int c = b*4-4;
-
-        if (k==c){
-             System.out.print("Yes");
+        if((a==0)&&(b==0)){
+            System.out.print("INF");
         }
         else{
-            System.out.print("NO");
+            if (b%a==0){
+                int x = -b/a;
+                System.out.print(x);
+            }
+            else{
+                System.out.print("NO");
+            }
         }
+
+
 
 
 
