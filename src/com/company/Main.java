@@ -10,7 +10,7 @@ public class Main {
         int m = scanner.nextInt();
         int k = scanner.nextInt();
 
-        if (((k%n==0)||(k%m==0))&&(k!=n)&&(k!=m)){
+        if (((k%n==0)||(k%m==0))&&(k!=n*m)){
              System.out.print("Yes");
         }
         else{
