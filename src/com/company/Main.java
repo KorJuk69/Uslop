@@ -10,11 +10,15 @@ public class Main {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
         int d = scanner.nextInt();
-        if((a==c)||(b==d)){
-            System.out.print("Yes");
+
+        if (((a==c+1)&&((b==d+1)||(b==d)||(b==d-1)))||((a==c-1)&&((b==d+1)||(b==d)||(b==d-1)))||((a==c)&&((b==d+1)||(b==d-1)))){
+             System.out.print("Yes");
         }
-        else {
+        else{
             System.out.print("NO");
         }
+
+
+
     }
 }
