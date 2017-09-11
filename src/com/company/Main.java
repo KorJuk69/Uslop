@@ -11,7 +11,7 @@ public class Main {
         int c = scanner.nextInt();
         int d = scanner.nextInt();
 
-        if (((a==c+1)&&((b==d+1)||(b==d)||(b==d-1)))||((a==c-1)&&((b==d+1)||(b==d)||(b==d-1)))||((a==c)&&((b==d+1)||(b==d-1)))){
+        if (((a==c+1)&&((b==d+2)||(b==d-2)))||((a==c+2)&&((b==d+1)||(b==d-1)))||((a==c-1)&&((b==d+2)||(b==d-2)))||((a==c-2)&&((b==d+1)||(b==d-1)))){
              System.out.print("Yes");
         }
         else{
