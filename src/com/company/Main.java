@@ -10,7 +10,7 @@ public class Main {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
         int d = scanner.nextInt();
-        if((a==c)||(b==d)){
+        if((a==c)||(b==d)||(a+b==c+d)||(a-b==c-d)){
             System.out.print("Yes");
         }
         else {
