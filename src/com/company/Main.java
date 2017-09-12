@@ -15,24 +15,19 @@ public class Main {
             System.out.print("INF");
         }
         else{
-            if((b%a==0)&&(d%c==0)){
-                //если и числитель и знаменатель = 0
+            if(d%c==0){
+                System.out.print("NO");
             }
-            else {
+            else{
             if (b%a==0){
                 int x = -b/a;
                 System.out.print(x);
             }
             else{
-                if(d%c==0){
-                    int x = -d/c;
-                    System.out.print(x);
-                }
-                else {
                     System.out.print("NO");
-                }
             }}
         }
+
 
 
 
