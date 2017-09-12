@@ -11,27 +11,11 @@ public class Main {
         int c = scanner.nextInt();
         int d = scanner.nextInt();
 
-        if((a==0)&&(b==0)){
-            System.out.print("INF");
-        }
-        else{
-            if(d%c==0){
-                System.out.print("NO");
-            }
-            else{
-            if (b%a==0){
-                int x = -b/a;
-                System.out.print(x);
-            }
-            else{
-                    System.out.print("NO");
-            }}
-        }
-
-
-
-
-
+        a = a * 100;
+        c = c * 100;
+        int e = ((c+d)-(a+b))/100;
+        int f = (c+d)-(a+b) - e*100;
+        System.out.print(e+" "+f);
 
     }
 }
