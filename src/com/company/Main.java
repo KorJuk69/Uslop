@@ -9,12 +9,23 @@ public class Main {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
-        int d = scanner.nextInt();
-        if((a==c)||(b==d)){
-            System.out.print("Yes");
+
+        if((a>=(b+c))||(b>=(a+c))||(c>=(a+b))){
+            System.out.print("impossible");
         }
         else {
-            System.out.print("NO");
+            if((c*c==(a*a+b*b))||(a*a==(c*c+b*b))||(b*b==(a*a+c*c))){
+                System.out.print("right");
+            }
+            else {
+                if (((c*c)>(a*a+b*b))||((a*a)>(c*c+b*b))||((b*b)>(a*a+c*c))){
+                    System.out.print("obtuse");
+                }
+                else {
+                    System.out.print("acute");
+                }
+            }
         }
+
     }
 }
