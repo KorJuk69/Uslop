@@ -9,12 +9,17 @@ public class Main {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
-        int d = scanner.nextInt();
-        if((a==c)||(b==d)){
-            System.out.print("Yes");
+
+        if((a==b)&&(a==c)){
+            System.out.print(3);
         }
         else {
-            System.out.print("NO");
+            if((a==b)||(a==c)||(b==c)){
+                System.out.print(2);
+            }
+            else{
+                System.out.print(0);
+            }
         }
     }
 }
