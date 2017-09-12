@@ -7,15 +7,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = 	new Scanner(System.in);
         int k = scanner.nextInt();
+        int m = scanner.nextInt();
+        int n = scanner.nextInt();
+        int vremya;
 
-        while (k%3!=0){
-            k=k-5;
+        if(n<=k){
+            vremya = n*2*m;
         }
-        if(k<0){
-            System.out.print("NO");
-        } else {
-            System.out.print("Yes");
+        else{
+            vremya = (n/k + 1)*2*m;
         }
+
+        System.out.print(vremya);
 
     }
 }
