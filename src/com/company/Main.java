@@ -6,19 +6,25 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = 	new Scanner(System.in);
-        int k = scanner.nextInt();
-        int m = scanner.nextInt();
-        int n = scanner.nextInt();
-        int vremya;
+        int x1 = scanner.nextInt();
+        int y1 = scanner.nextInt();
+        int x2 = scanner.nextInt();
+        int y2 = scanner.nextInt();
 
-        if(n<=k){
-            vremya = n*2*m;
+        if ((x1>0)&&(x2>0)){
+            if(((y1>0)&&(y2>0))||(y1<0)&&(y2<0)){
+                System.out.print("Yes");
+            }
+        } else {
+            if ((x1<0)&&(x2<0)){
+                if(((y1>0)&&(y2>0))||(y1<0)&&(y2<0)){
+                    System.out.print("Yes");
+                }
+            }
+            else {
+                System.out.print("NO");
+            }
         }
-        else{
-            vremya = (n/k + 1)*2*m;
-        }
-
-        System.out.print(vremya);
 
     }
 }
