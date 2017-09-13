@@ -9,12 +9,25 @@ public class Main {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
-        int d = scanner.nextInt();
-        if((a==c)||(b==d)){
-            System.out.print("Yes");
+        int d;
+
+        if((a>b)||(a>c)){
+            d=a;
+            a=b;
+            b=d;
         }
-        else {
-            System.out.print("NO");
+        if(b>c){
+            d=b;
+            b=c;
+            c=d;
         }
+        if(a>b){
+            d=a;
+            a=b;
+            b=d;
+        }
+
+        System.out.print(a+" "+b+" "+c);
+
     }
 }
